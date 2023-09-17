@@ -4,7 +4,7 @@ import "fmt";
 
 
 func main() {
-	//Arrays
+	//Arrays (arrays in go are fixed length. you cannot change the length)
 	var ages [4]int = [4]int{3, 5, 7, 6}
 
 	var new_ages = [6]int{3, 5, 7, 6, 2, 2}
@@ -16,4 +16,12 @@ func main() {
 	fmt.Println(names)
 
 	//Slices
+	var new_scores = []int{60, 67, 45}
+	new_scores[2] = 100
+	
+	fmt.Println(new_scores, len(new_scores))
+
+	new_scores = append(new_scores, 90)
+
+	fmt.Println(new_scores, len(new_scores))
 }
