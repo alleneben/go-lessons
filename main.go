@@ -76,4 +76,13 @@ func main() {
 	} else {
 		fmt.Println("score is less than 50")
 	}
+
+	for index, value := range some_names {
+		if(index == 2) {
+			fmt.Printf("Print element %v at pos %v \n", value, index)
+			continue
+		}
+
+		fmt.Printf("index %v and value %v was not skipped \n", index, value)
+	}
 }
