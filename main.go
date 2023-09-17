@@ -43,4 +43,6 @@ func main() {
 
 	fmt.Println(strings.Contains(greeting, "are"))
 	fmt.Println(strings.ReplaceAll(greeting, "hello", "hey"))
+	fmt.Println(strings.Index(greeting, "ar"))
+	fmt.Println(strings.Split(greeting, "whe"))
 }
