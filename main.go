@@ -18,10 +18,19 @@ func main() {
 	//Slices
 	var new_scores = []int{60, 67, 45}
 	new_scores[2] = 100
-	
+
 	fmt.Println(new_scores, len(new_scores))
 
 	new_scores = append(new_scores, 90)
 
 	fmt.Println(new_scores, len(new_scores))
+
+
+	//Slice Ranges
+	names_range := names[0:3]
+	var names_range_end = names[2:]
+	names_range_start := names[:2]
+	names_range_start = append(names_range_start, "kwame")
+	
+	fmt.Println(names_range, names_range_end, names_range_start)
 }
