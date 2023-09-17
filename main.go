@@ -68,4 +68,21 @@ func main() {
 	for index, value := range some_names {
 		fmt.Printf("the value at index %v is %v \n", index, value)
 	}
+
+	//Conditionals
+	score := 30
+	if score > 50 {
+		fmt.Println("score is greater than 50")
+	} else {
+		fmt.Println("score is less than 50")
+	}
+
+	for index, value := range some_names {
+		if(index == 2) {
+			fmt.Printf("Print element %v at pos %v \n", value, index)
+			continue
+		}
+
+		fmt.Printf("index %v and value %v was not skipped \n", index, value)
+	}
 }
