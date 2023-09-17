@@ -45,4 +45,23 @@ func main() {
 	fmt.Println(strings.ReplaceAll(greeting, "hello", "hey"))
 	fmt.Println(strings.Index(greeting, "ar"))
 	fmt.Println(strings.Split(greeting, "whe"))
+
+	//Loops
+	//while
+	x := 0
+	for x < 5 {
+		fmt.Println("value of x is: ", x)
+		x++
+	}
+
+	//for
+	for i := 0; i < 5; i++ {
+		fmt.Println("value of i coming from a for loop: ", i)
+	}
+
+	//loop through a slice
+	some_names := []string{"allen", "luigi", "bowser", "mario", "zagalo", "pele", "messi"}
+	for i := 0; i < len(some_names); i++ {
+		fmt.Println("the elements from a slice :: ", some_names[i])
+	}
 }
