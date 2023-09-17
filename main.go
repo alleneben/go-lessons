@@ -68,4 +68,12 @@ func main() {
 	for index, value := range some_names {
 		fmt.Printf("the value at index %v is %v \n", index, value)
 	}
+
+	//Conditionals
+	score := 30
+	if score > 50 {
+		fmt.Println("score is greater than 50")
+	} else {
+		fmt.Println("score is less than 50")
+	}
 }
