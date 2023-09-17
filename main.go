@@ -1,6 +1,9 @@
 package main
 
-import "fmt";
+import (
+	"fmt"
+	"strings"
+)
 
 
 func main() {
@@ -33,4 +36,11 @@ func main() {
 	names_range_start = append(names_range_start, "kwame")
 	
 	fmt.Println(names_range, names_range_end, names_range_start)
+
+
+	//String package
+	greeting := "hello allen, where are you going today?"
+
+	fmt.Println(strings.Contains(greeting, "are"))
+	fmt.Println(strings.ReplaceAll(greeting, "hello", "hey"))
 }
