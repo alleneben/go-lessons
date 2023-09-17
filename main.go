@@ -85,4 +85,15 @@ func main() {
 
 		fmt.Printf("index %v and value %v was not skipped \n", index, value)
 	}
+
+	cycleNamesAndGreet(some_names, sayHello)
+}
+
+func cycleNamesAndGreet(names []string, f func(string)){
+	for _, value := range names {
+		f(value)
+	}
+}
+func sayHello(n string) {
+	fmt.Printf("hello %v \n", n)
 }
