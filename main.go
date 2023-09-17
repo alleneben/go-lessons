@@ -64,4 +64,8 @@ func main() {
 	for i := 0; i < len(some_names); i++ {
 		fmt.Println("the elements from a slice :: ", some_names[i])
 	}
+
+	for index, value := range some_names {
+		fmt.Printf("the value at index %v is %v \n", index, value)
+	}
 }
